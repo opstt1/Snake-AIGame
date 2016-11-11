@@ -6,8 +6,9 @@
 //  Copyright © 2016年 Li Haomiao. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SceneViewController : BaseViewController
+@interface SceneViewController : UIViewController
 
 @end

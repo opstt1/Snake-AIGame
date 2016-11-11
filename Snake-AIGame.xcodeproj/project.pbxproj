@@ -13,10 +13,15 @@
 		E2BFA2801D819481008259BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BFA27E1D819481008259BA /* LaunchScreen.storyboard */; };
 		E2BFA2881D819492008259BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BFA2871D819492008259BA /* Main.storyboard */; };
 		E2BFA28A1D8194A4008259BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BFA2891D8194A4008259BA /* Assets.xcassets */; };
-		E2BFA28E1D81959C008259BA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFA28D1D81959C008259BA /* BaseViewController.m */; };
 		E2BFA2921D8195A8008259BA /* FinalSnakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFA2911D8195A8008259BA /* FinalSnakeViewController.m */; };
 		E2BFA2961D8195BA008259BA /* SceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFA2951D8195BA008259BA /* SceneViewController.m */; };
 		E2BFA29B1D8195DC008259BA /* UIView+IBInspect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFA29A1D8195DC008259BA /* UIView+IBInspect.m */; };
+		E2D677BF1DD5AA0500F00B36 /* SnakePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D677BE1DD5AA0500F00B36 /* SnakePiece.m */; };
+		E2D677C21DD5ABD300F00B36 /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D677C11DD5ABD300F00B36 /* Snake.m */; };
+		E2D677C51DD5AFC300F00B36 /* SnakeAIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D677C41DD5AFC300F00B36 /* SnakeAIViewController.m */; };
+		E2D677C81DD5B3B100F00B36 /* SnakePiece+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D677C71DD5B3B100F00B36 /* SnakePiece+Direction.m */; };
+		E2D677CB1DD5BD0300F00B36 /* Snake+randomAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D677CA1DD5BD0300F00B36 /* Snake+randomAction.m */; };
+		E2D677CE1DD5BDFC00F00B36 /* Snake+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D677CD1DD5BDFC00F00B36 /* Snake+Action.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +35,24 @@
 		E2BFA2811D819481008259BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2BFA2871D819492008259BA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E2BFA2891D8194A4008259BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2BFA28C1D81959C008259BA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		E2BFA28D1D81959C008259BA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E2BFA2901D8195A8008259BA /* FinalSnakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalSnakeViewController.h; sourceTree = "<group>"; };
 		E2BFA2911D8195A8008259BA /* FinalSnakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalSnakeViewController.m; sourceTree = "<group>"; };
 		E2BFA2941D8195BA008259BA /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneViewController.h; sourceTree = "<group>"; };
 		E2BFA2951D8195BA008259BA /* SceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneViewController.m; sourceTree = "<group>"; };
 		E2BFA2991D8195DC008259BA /* UIView+IBInspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBInspect.h"; sourceTree = "<group>"; };
 		E2BFA29A1D8195DC008259BA /* UIView+IBInspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBInspect.m"; sourceTree = "<group>"; };
+		E2D677BD1DD5AA0500F00B36 /* SnakePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakePiece.h; sourceTree = "<group>"; };
+		E2D677BE1DD5AA0500F00B36 /* SnakePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakePiece.m; sourceTree = "<group>"; };
+		E2D677C01DD5ABD300F00B36 /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		E2D677C11DD5ABD300F00B36 /* Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
+		E2D677C31DD5AFC300F00B36 /* SnakeAIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeAIViewController.h; sourceTree = "<group>"; };
+		E2D677C41DD5AFC300F00B36 /* SnakeAIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeAIViewController.m; sourceTree = "<group>"; };
+		E2D677C61DD5B3B100F00B36 /* SnakePiece+Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SnakePiece+Direction.h"; sourceTree = "<group>"; };
+		E2D677C71DD5B3B100F00B36 /* SnakePiece+Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SnakePiece+Direction.m"; sourceTree = "<group>"; };
+		E2D677C91DD5BD0300F00B36 /* Snake+randomAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Snake+randomAction.h"; sourceTree = "<group>"; };
+		E2D677CA1DD5BD0300F00B36 /* Snake+randomAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Snake+randomAction.m"; sourceTree = "<group>"; };
+		E2D677CC1DD5BDFC00F00B36 /* Snake+Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Snake+Action.h"; sourceTree = "<group>"; };
+		E2D677CD1DD5BDFC00F00B36 /* Snake+Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Snake+Action.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +113,6 @@
 		E2BFA28B1D819591008259BA /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E2BFA28C1D81959C008259BA /* BaseViewController.h */,
-				E2BFA28D1D81959C008259BA /* BaseViewController.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -107,8 +120,20 @@
 		E2BFA28F1D81959F008259BA /* Snake */ = {
 			isa = PBXGroup;
 			children = (
+				E2D677BD1DD5AA0500F00B36 /* SnakePiece.h */,
+				E2D677BE1DD5AA0500F00B36 /* SnakePiece.m */,
+				E2D677C61DD5B3B100F00B36 /* SnakePiece+Direction.h */,
+				E2D677C71DD5B3B100F00B36 /* SnakePiece+Direction.m */,
+				E2D677C01DD5ABD300F00B36 /* Snake.h */,
+				E2D677C11DD5ABD300F00B36 /* Snake.m */,
 				E2BFA2901D8195A8008259BA /* FinalSnakeViewController.h */,
 				E2BFA2911D8195A8008259BA /* FinalSnakeViewController.m */,
+				E2D677C31DD5AFC300F00B36 /* SnakeAIViewController.h */,
+				E2D677C41DD5AFC300F00B36 /* SnakeAIViewController.m */,
+				E2D677C91DD5BD0300F00B36 /* Snake+randomAction.h */,
+				E2D677CA1DD5BD0300F00B36 /* Snake+randomAction.m */,
+				E2D677CC1DD5BDFC00F00B36 /* Snake+Action.h */,
+				E2D677CD1DD5BDFC00F00B36 /* Snake+Action.m */,
 			);
 			name = Snake;
 			sourceTree = "<group>";
@@ -170,6 +195,7 @@
 				TargetAttributes = {
 					E2BFA26C1D819481008259BA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 59U9PKJ5KW;
 					};
 				};
 			};
@@ -211,10 +237,15 @@
 			files = (
 				E2BFA2921D8195A8008259BA /* FinalSnakeViewController.m in Sources */,
 				E2BFA2781D819481008259BA /* ViewController.m in Sources */,
-				E2BFA28E1D81959C008259BA /* BaseViewController.m in Sources */,
 				E2BFA2961D8195BA008259BA /* SceneViewController.m in Sources */,
+				E2D677C81DD5B3B100F00B36 /* SnakePiece+Direction.m in Sources */,
 				E2BFA29B1D8195DC008259BA /* UIView+IBInspect.m in Sources */,
+				E2D677C21DD5ABD300F00B36 /* Snake.m in Sources */,
 				E2BFA2751D819481008259BA /* AppDelegate.m in Sources */,
+				E2D677BF1DD5AA0500F00B36 /* SnakePiece.m in Sources */,
+				E2D677CE1DD5BDFC00F00B36 /* Snake+Action.m in Sources */,
+				E2D677CB1DD5BD0300F00B36 /* Snake+randomAction.m in Sources */,
+				E2D677C51DD5AFC300F00B36 /* SnakeAIViewController.m in Sources */,
 				E2BFA2721D819481008259BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 59U9PKJ5KW;
 				INFOPLIST_FILE = "Snake-AIGame/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lhm.Snake-AIGame";
@@ -332,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 59U9PKJ5KW;
 				INFOPLIST_FILE = "Snake-AIGame/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lhm.Snake-AIGame";
@@ -358,6 +391,7 @@
 				E2BFA2861D819481008259BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

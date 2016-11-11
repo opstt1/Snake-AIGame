@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DAE55B2C98318DAA674BB73ED715AE5AA8E99715",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DAE55B2C98318DAA674BB73ED715AE5AA8E99715" : 9223372036854775807,
+    "FF09720136F2BCE75A2474750E6C437C1B22F3F6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "30409235-CC91-4EB9-9990-F063305684BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DAE55B2C98318DAA674BB73ED715AE5AA8E99715" : "Snake-AIGame\/",
+    "FF09720136F2BCE75A2474750E6C437C1B22F3F6" : "..\/ios-xxkuaipao"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Snake-AIGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Snake-AIGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:opstt1\/Snake-AIGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DAE55B2C98318DAA674BB73ED715AE5AA8E99715"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "db.papayamobile.com:kiwi\/ios-xxkuaipao.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF09720136F2BCE75A2474750E6C437C1B22F3F6"
+    }
+  ]
+}
