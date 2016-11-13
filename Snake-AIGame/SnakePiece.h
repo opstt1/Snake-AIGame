@@ -53,10 +53,11 @@ typedef NS_ENUM(NSInteger, SnakePieceType){
 @property (nonatomic, readwrite, strong) UIImageView *snakeImage;
 @property (nonatomic, readwrite, assign) CGRect moveRect;
 
-+ (SnakePiece *)snakeInView:(UIView *)view pieceType:(SnakePieceType)pieceType frontDirection:(SnakeDirection)frontDirection backDirect:(SnakeDirection)backDirect center:(CGPoint)center moveRect:(CGRect)moveRect;
++ (SnakePiece *)snakeInView:(UIView *)view pieceType:(SnakePieceType)pieceType frontDirection:(SnakeDirection)frontDirection backDirect:(SnakeDirection)backDirect center:(CGPoint)center;// moveRect:(CGRect)moveRect;
 
 
 - (void)setFrontDirection:(SnakeDirection)frontDirection backDirection:(SnakeDirection)backDirection snakePieceType:(SnakePieceType)snakePiceType;
 
+- (void)update;
 
 @end

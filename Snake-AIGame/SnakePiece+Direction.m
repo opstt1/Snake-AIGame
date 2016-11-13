@@ -7,6 +7,7 @@
 //
 
 #import "SnakePiece+Direction.h"
+#import "CGPointToolkit.h"
 
 @implementation SnakePiece (Direction)
 
@@ -68,16 +69,7 @@
 
 - (BOOL)isCrossBorderWithDirection:(SnakeDirection)direction
 {
-    CGPoint point = self.center;
-    CGPoint nextPoint = [self directionPiont:direction];
-    CGFloat pointX = nextPoint.x * snakeSize + point.x;
-    CGFloat pointY = nextPoint.y * snakeSize + point.y;
-    
-    if ( pointX < 0 || pointY < 0 || pointY > self.moveRect.size.height || pointX > self.moveRect.size.width ){
-        return YES;
-    }
-    
-    return NO;
+    return [CGPointToolkit isCrossBorderWithDirection:direction point:self.center];
 }
 
 - (CGPoint)nextCenterWithDirection:(SnakeDirection)direction
@@ -86,4 +78,9 @@
     return CGPointMake(self.center.x+snakeSize*nextCenter.x, self.center.y+snakeSize*nextCenter.y);
 }
 
+- (CGPoint)nextPointWithDirection:(SnakeDirection)direction currentPoint:(CGPoint)currentPoint
+{
+    CGPoint nextCenter = [self directionPiont:direction];
+    return CGPointMake(currentPoint.x+snakeSize*nextCenter.x, currentPoint.y+snakeSize*nextCenter.y);
+}
 @end

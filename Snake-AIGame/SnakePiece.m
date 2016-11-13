@@ -18,7 +18,7 @@
 @implementation SnakePiece
 
 
-+ (SnakePiece *)snakeInView:(UIView *)view pieceType:(SnakePieceType)pieceType frontDirection:(SnakeDirection)frontDirection backDirect:(SnakeDirection)backDirect center:(CGPoint)center moveRect:(CGRect)moveRect;
++ (SnakePiece *)snakeInView:(UIView *)view pieceType:(SnakePieceType)pieceType frontDirection:(SnakeDirection)frontDirection backDirect:(SnakeDirection)backDirect center:(CGPoint)center;// moveRect:(CGRect)moveRect;
 
 {
     SnakePiece *snakePiece = [[SnakePiece alloc] init];
@@ -30,9 +30,14 @@
     
     [snakePiece setFrontDirection:frontDirection backDirection:backDirect snakePieceType:pieceType];
     snakePiece.superView = view;
-    snakePiece.moveRect = moveRect;
+//    snakePiece.moveRect = moveRect;
     
     return snakePiece;
+}
+
+- (void)update
+{
+    [self setFrontDirection:_frontDirection backDirection:_backDirection snakePieceType:_snakePieceType];
 }
 
 - (void)setFrontDirection:(SnakeDirection)frontDirection backDirection:(SnakeDirection)backDirection snakePieceType:(SnakePieceType)snakePiceType

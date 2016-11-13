@@ -13,4 +13,9 @@
 
 - (BOOL)snakeCanGoWithDirection:(SnakeDirection)direction;
 
+- (void)goWithDirection:(SnakeDirection)direction;
+
+- (BOOL)nextDirectionIsFood:(SnakeDirection)direction;
+
+- (BOOL)snakeCanGoWithDirection:(SnakeDirection)direction point:(CGPoint)point;
 @end

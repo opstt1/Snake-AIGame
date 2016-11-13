@@ -49,4 +49,6 @@
 
 - (CGPoint)nextCenterWithDirection:(SnakeDirection)direction;
 
+- (CGPoint)nextPointWithDirection:(SnakeDirection)direction currentPoint:(CGPoint)currentPoint;
+
 @end

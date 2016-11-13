@@ -11,6 +11,7 @@
 
 @interface Snake (randomAction)
 
-- (BOOL)randomDirectionGo;
+
+- (SnakeDirection)randomGpDirection;
 
 @end

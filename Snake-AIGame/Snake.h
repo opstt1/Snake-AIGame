@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SnakePiece.h"
+#import "Food.h"
 
-static int const arrayLength = 20 * 20;
+static int const arrayLength = 20 * 200;
+static NSInteger const moveRectWidth = 240;
 
 typedef NS_ENUM(NSInteger, SnakeIQ)
 {
@@ -23,12 +25,30 @@ typedef NS_ENUM(NSInteger, SnakeIQ)
 }
 
 @property (nonatomic, readwrite, strong) NSArray *snakePieces;
-@property (nonatomic, readwrite, assign) CGRect moveRect;
+@property (nonatomic, readwrite, strong) NSMutableArray *canPutFood;
+@property (nonatomic, readwrite, assign) CGPoint foodCenter;
 
 + (Snake *)creatSnakeOnView:(UIView *)superView moveRect:(CGRect)moveRect;
 
 - (void)updateSnake;
 
-- (BOOL)hasSnakePieceInPoint:(CGPoint)point;
+- (Snake *)makeVirtualSnake;
+
+/**
+ 指定点是否有蛇块
+
+ @param point 指定点
+
+ @return 是否有蛇块
+ */
+- (BOOL)hasSnakePieceInPoint:(CGPoint)point snakeGo:(BOOL)snakeGo;
+
+
+/**
+ 吃到食物后增加一个蛇块
+
+ @param direction 蛇前进的方向
+ */
+- (void)addSnakePieceWithDirection:(SnakeDirection)direction;
 
 @end

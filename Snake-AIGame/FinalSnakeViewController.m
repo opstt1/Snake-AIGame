@@ -142,7 +142,7 @@
         if ( [_snake count] >= (WIDTH / SNAKE_PIECE) * (WIDTH / SNAKE_PIECE) -1  ){
             _endDate = [NSDate date];
             [timer invalidate];
-            NSLog(@"Date %@  %@ %lf",_startDate,_endDate);
+//            NSLog(@"Date %@  %@ %lf",_startDate,_endDate);
             [self calculateUseTime];
             timer = nil;
         }
@@ -213,7 +213,7 @@
                 count ++;
                 _endDate = [NSDate date];
                 [timer invalidate];
-                NSLog(@"Date %@  %@",_startDate,_endDate);
+//                NSLog(@"Date %@  %@",_startDate,_endDate);
                 [self calculateUseTime];
                 timer = nil;
             }
