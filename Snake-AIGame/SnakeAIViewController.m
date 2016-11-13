@@ -14,6 +14,8 @@
 #import "SnakePiece+Direction.h"
 
 static int const INF = 99999999;
+#define UIScreenWidth [UIScreen mainScreen].bounds.size.width
+#define UIScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface SnakeAIViewController ()
 {
@@ -32,8 +34,12 @@ static int const INF = 99999999;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 0, moveRectWidth, moveRectWidth)];
+    self.view.backgroundColor = [UIColor blackColor];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(UIScreenWidth/2-moveRectWidth/2, UIScreenHeight/2-moveRectWidth/2, moveRectWidth, moveRectWidth)];
     view.backgroundColor = [UIColor blackColor];
+    view.layer.borderColor = [UIColor redColor].CGColor;
+    view.layer.borderWidth = 1.0;
+    
     [self.view addSubview:view];
     int origin = 0;
     if (( moveRectWidth / 2 ) % 20 == 0){
